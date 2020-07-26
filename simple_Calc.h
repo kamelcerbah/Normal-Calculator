@@ -10,6 +10,7 @@ printf("\n          ========= Chose Function =========\n");
 printf("\n          | 1- Addition (+)                |\n");
 printf("\n          | 2- Substraction (-)            |\n ");
 printf("\n          | 3- multiplication (x)          |\n ");
+printf("\n          | 4- Division (/)                |\n ");
 printf("\n          ==================================\n ");
 }
 //verifications
@@ -17,7 +18,7 @@ printf("\n          ==================================\n ");
     //function choice verf
     int fChoice_Verf(int function_choice){
 
-        if(function_choice<=3 && function_choice>=1){
+        if(function_choice<=4 && function_choice>=1){
                 //break when choice is correct
             return function_choice ;
 
@@ -28,7 +29,7 @@ printf("\n          ==================================\n ");
                 printf("\n Input ERROR \n Re Enter \n");
                 scanf("%d",&function_choice);
 
-            }while( function_choice>3 || function_choice<1 );
+            }while( function_choice>4 || function_choice<1 );
         }
 
         //return only when choice is correct
@@ -47,4 +48,10 @@ float sub(float n1,float n2){
 //multiplication
 float mult(float n1,float n2){
     return n1*n2;
+}
+// Division
+float fdiv(float n1,float n2){
+
+        return n1/n2;
+
 }
